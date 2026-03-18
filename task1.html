@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
+    <style>
+        .divider {
+            border: 1px solid black;
+            margin: 10px 0;
+        }
+
+        .code-block {
+            background: #f7f8fb;
+            border-radius: 8px;
+            padding: 14px 16px;
+            border: 1px solid rgba(0, 0, 0, 0.065);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+                "Courier New", monospace;
+            font-size: 0.95rem;
+            color: #1b1f28;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Task 1</h1>
+    </header>
+
+    <main>
+        <div class="divider"></div>
+
+        <p>
+            Even though modern websites are generally built with user-friendly interfaces, it’s useful to
+            know some basic HTML. If you know the following 17 HTML example tags (and a few extras),
+            you’ll be able to create a basic webpage from scratch or tweak the code created by an app
+            like WordPress.
+        </p>
+
+        <p>
+            We’ve provided HTML code examples with output for most of the tags. If you want to see them
+            in action, download the sample HTML file at the end of the article. You can play with it in
+            a text editor and load it up in a browser to see what your changes do.
+        </p>
+
+        <h2>1. &lt;!DOCTYPE html&gt;</h2>
+        <div class="divider"></div>
+
+        <p>
+            You’ll need this tag at the beginning of every HTML document you create. It ensures that a
+            browser knows that it’s reading HTML, and that it expects HTML5, the latest version.
+        </p>
+        <p>
+            Even though this isn’t actually an HTML tag, it’s still a good one to know.
+        </p>
+
+        <h2>2. &lt;html&gt;</h2>
+        <div class="divider"></div>
+
+        <p>
+            This is another tag that tells a browser that it’s reading HTML. The &lt;html&gt; tag goes
+            straight after the DOCTYPE tag, and you close it with a &lt;/html&gt; tag right at the end
+            of your file. Everything else in your document goes between these tags.
+        </p>
+
+        <div class="code-block">
+            <code>
+            &lt;head&gt;<br />
+            &nbsp;&nbsp;&lt;title&gt;My Website&lt;/title&gt;<br />
+            &lt;/head&gt;
+            </code>
+        </div>
+
+        <p>
+            That’s the name that will be displayed as the tab title when it’s opened in a browser.
+        </p>
+    </main>
 </body>
 </html>
