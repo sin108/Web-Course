@@ -9,10 +9,18 @@
         table {
             border-collapse: collapse;
             width: 100%;
+            border: 2px solid #666;
         }
 
         thead {
-            background-color: #f2f2f2;
+            background-color: #4a7a8f;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid #666;
+            padding: 8px;
+            text-align: left;
         }
     </style>
 </head>
@@ -36,9 +44,82 @@
                 <tbody>
                     <tr>
                         <td>Remove Inline Style</td>
-                        <td>Use classes to style everything</td>
-                        <td>x</td>
+                        <td>You should never use inline styles</td>
+                        <td>✕</td>
 
+                    </tr>
+                    <tr>
+                        <td>Remove class and IDs</td>
+                        <td>Use classes to style everything</td>
+                        <td>✕</td>
+
+                    </tr>
+                    <tr>
+                        <td>Remove all tags</td>
+                        <td>This leave only the plain text</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>Remove successive &nbsp;s</td>
+                        <td>Never use non-breaking spaces to set margins.</td>
+                        <td>✕</td>
+
+                    </tr>
+                     <tr>
+                        <td>Remove successive &nbsp;s</td>
+                        <td>Never use non-breaking spaces to set margins.</td>
+                        <td>✕</td>
+                    </tr>
+                    <tr>
+                        <td>Remove empty tags</td>
+                        <td>Empty tags should go!</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Remove tags with one &nbsp;</td>
+                        <td>This makes no sense!</td>
+                        <td>✕</td>
+                    </tr>
+                    <tr>
+                        <td>Remove span tags</td>
+                        <td>Span tags with <span style="color: green;">all styles</span></td>
+                        <td>✕</td>
+                    </tr>
+                    <tr>
+                        <td>Remove images</td>
+                        <td>I am an image: 😊</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Remove links</td>
+                        <td><a href="#">This</a> is a link.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Remove tables</td>
+                        <td>Takes everything out of the table.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Replace table tags with structured divs</td>
+                        <td>This text is inside a table.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Remove comments</td>
+                        <td>This is only visible in the source editor</td>
+                        <td>✕</td>
+                    </tr>
+                    <tr>
+                        <td>Encode special characters</td>
+                        <td>❤ 😊 ★ > &lt;</td>
+                        <td>✕</td>
+                    </tr>
+                    <tr>
+                        <td>Set new lines and text indents</td>
+                        <td>Organize the tags in a nice tree view.</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
