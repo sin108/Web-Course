@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeratio Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="name">Full Name<span style="color: red;">*</span>: </label>
+            <input type="text" id="name" name="name" required minlength="2" /><br /><br />
+
+            <!-- gender -->
+            <label for="gender">Gender<span style="color: red;">*</span>: </label>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required />
+            <label for="other">Other</label><br /><br />
+
+
+
+            <label for="email">Email<span style="color: red;">*</span>: </label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="password">Password<span style="color: red;">*</span>: </label>
+            <input type="password" id="password" name="password" required minlength="8" /><br /> <br />
+
+            <!-- phone number -->
+            <label for="phone">Phone Number<span style="color: red;">*</span>: </label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" /> <br /> <br />
+
+            <!-- country with select -->
+            <label for="country">Country<span style="color: red;">*</span>: </label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="cambodia">Cambodia</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+            </select> <br /> <br />
+
+            <!-- bio with textarea -->
+            <label for="bio">Bio: </label>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea> <br /> <br />
+
+            <input type="submit" value="Register" />
+        </form>
+    </main>
+</body>
+
+</html>
